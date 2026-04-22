@@ -1,3 +1,4 @@
+#获取1688商品详情页图片
 import os
 import re
 from tkinter import image_names
@@ -116,6 +117,11 @@ def shop_detail():
         print('未找到视频')
 
     #保存所有网页
+   
+    for i in range(5):
+        tab_detail.scroll.to_bottom()
+        tab_detail.wait(1)
+
     tab_detail.save(path=file_name)
 
     
